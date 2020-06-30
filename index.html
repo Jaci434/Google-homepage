@@ -1,0 +1,343 @@
+<head>
+    <title>Google homepage</title>
+    <meta charste="UTF-8">
+    <style>
+        img{
+            width:272;
+            height:92;
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            margin-top:150px;
+        }
+        .search{
+            display: flex;
+            margin-left: auto;
+            margin-right: auto;
+            margin-top:25px;
+            width:600;
+            height:40;
+            border-radius: 15px;
+            border:1px solid #dfe1e5;
+            background-image: url("https://cdn1.iconfinder.com/data/icons/hawcons/32/698956-icon-111-search-512.png");
+            background-position: left;
+            background-position-x: 10px;
+            background-repeat: no-repeat;
+            background-size: 25px 25px;
+            
+        }
+        .search:hover{
+            box-shadow: 0 1px 6px 0 rgba(32,33,36,0.28);
+        }
+        .search-bar{
+            margin-left: 30px;
+            margin-top: 3px;
+            margin-bottom: 3px;
+            width:487;
+            height:34;
+            border:none;
+            padding-left: 10px;
+            background-position-y:10px;
+        }
+        .search-bar:active{
+            border:none;
+        }
+        .search-bar:focus{
+            outline: none;
+        }
+        .voice-button{
+            width:25;
+            height:25;
+            margin-left:7px;
+            margin-top:7.5px;
+            margin-bottom:7.5px;
+            background-image: url("https://upload.wikimedia.org/wikipedia/commons/thumb/e/e8/Google_mic.svg/417px-Google_mic.svg.png");
+            background-position: center;
+            background-size: contain;
+            background-color: white;
+            background-repeat: no-repeat;
+            border-style: none;
+        }
+        .keyboard-button{
+            width:25;
+            height:15;
+            margin-left:9px;
+            margin-top:11.5px;
+            margin-bottom: 11.5px;
+            background-image: url("https://www.gstatic.com/inputtools/images/tia.png");
+            background-position: center;
+            background-size: cover;
+            background-color: white;
+            border-style: none;
+        }
+        p{
+            text-align: center;
+            font-size: small;
+        }
+        .buttons{
+            display: flex;
+            justify-content: center;
+        }
+        .google-search-button{
+            background-color:#f2f2f2;
+            border-radius: 4px;
+            font-family: Arial, sans-serif;
+            color:#5F6368;
+            font-size: 14px;
+            margin:11px 4px;
+            padding:0 16px;
+            height:36px;
+            width:128px;
+            text-align: center;
+            cursor:pointer;
+            border-style: none;
+        }
+        .google-search-button:hover{
+            box-shadow: 0 1px 1px rgba(0,0,0,0.1);
+            background-color: #f8f8f8;
+            border: 1px solid #c6c6c6;
+            color:#222
+        }
+        .google-search-button:focus{
+            outline: none;
+        }
+        .lucky-button{
+            background-color:#f2f2f2;
+            border-radius: 4px;
+            font-family: Arial, sans-serif;
+            color:#5F6368;
+            font-size: 14px;
+            margin:11px 4px;
+            padding:0 16px;
+            height:36px;
+            width:144px;
+            text-align: center;
+            cursor:pointer;
+            border-style: none;
+        }
+        .lucky-button:hover{
+            box-shadow: 0 1px 1px rgba(0,0,0,0.1);
+            background-color: #f8f8f8;
+            border: 1px solid #c6c6c6;
+            color:#222
+        }
+        .lucky-button:focus{
+            outline: none;
+        }
+        nav{
+            display:flex;
+            justify-content: flex-end;
+        }
+        .Gmail{
+            margin-left: 10px;
+            margin-top: 7px;
+            font-size:13px;
+            border-style: none;
+            background-color: white;
+            color: rgba(0,0,0,0.87);
+        }
+        .Gmail:focus{
+            outline: none;
+        }
+        .Gmail:hover{
+            text-decoration: underline;
+            opacity: .85;
+        }
+        .Images{
+            margin-left: 6px;
+            margin-top: 7px;
+            font-size:13px;
+            border-style: none;
+            background-color: white;
+            color: rgba(0,0,0,0.87);
+        }
+        .Images:focus{
+            outline: none;
+        }
+        .Images:hover{
+            text-decoration: underline;
+            opacity: .85;
+        }
+        .options{
+            margin-left: 13px;
+            margin-top: 10px;
+            font-size:13px;
+            border-style: none;
+            background-color: white;
+            background-image: url("https://cdn3.iconfinder.com/data/icons/navigation-and-settings/24/Material_icons-01-11-512.png");
+            height: 25px;
+            width:25px;
+            background-position: center;
+            background-size: contain;
+        }
+        .options:hover{
+            background-image: url("https://cdn3.iconfinder.com/data/icons/google-material-design-icons/48/ic_apps_48px-512.png");
+        }
+        .options:focus{
+            outline: none;
+        }
+        .Sign-in{
+            background-color:#4683ea;
+            border:1px solid #4285f4;
+            font-size:13px;
+            color:white;
+            padding: 0 12px;
+            border-radius: 2px;
+            height: 30px;
+            width:70px;
+            font-weight: bold;
+            outline: none;
+            margin-left: 17px;
+            margin-top: 7px;
+            margin-right: 22px;
+        }
+        .Sign-in:active{box-shadow: inset 0 2px 0 rgba(0,0,0,.15);}
+
+        footer{
+            position: fixed;
+            left: 0;
+            bottom: 0;
+            width: 100%;
+            background: #f2f2f2;
+            height: 50px;
+            border-top: 1px solid #e4e4e4;
+        }
+        .Advertising{
+            height: 41px;
+            border-style: none;
+            font-size: 14px;
+            color: #5f6368;
+            padding-left:27px;
+            width:100px;
+            background: #f2f2f2;
+        }
+        .Advertising:hover{
+            text-decoration: underline;
+        }
+        .Advertising:focus{
+            outline: none;
+            }
+        .Business{
+            height: 41px;
+            border-style: none;
+            font-size: 14px;
+            color: #5f6368;
+            padding-left:27px;
+            width:87px;
+            background: #f2f2f2;
+        }
+        .Business:hover{
+            text-decoration: underline;
+        }
+        .Business:focus{
+            outline: none;
+        }
+        .About{
+            height: 41px;
+            border-style: none;
+            font-size: 14px;
+            color: #5f6368;
+            padding-left:27px;
+            width:67px;
+            background: #f2f2f2;
+        }
+        .About:hover{
+            text-decoration: underline;
+        }
+        .About:focus{
+            outline: none;
+        }
+        .HowSW{
+            height: 41px;
+            border-style: none;
+            font-size: 14px;
+            color: #5f6368;
+            padding-left:27px;
+            width:157px;
+            background: #f2f2f2;
+        }
+        .HowSW:hover{
+            text-decoration: underline;
+        }
+        .HowSW:focus{
+            outline: none;
+        }
+        .Privacy{
+            height: 41px;
+            float:right;
+            border-style: none;
+            font-size: 14px;
+            color: #5f6368;
+            width:86px;
+            padding-right:27px;
+            background: #f2f2f2;
+        }
+        .Privacy:hover{
+            text-decoration: underline;
+        }
+        .Privacy:focus{
+            outline: none;
+        }
+        .Terms{
+            height: 41px;
+            float:right;
+            border-style: none;
+            font-size: 14px;
+            color: #5f6368;
+            padding-right:27px;
+            width:68px;
+            background: #f2f2f2;
+        }
+        .Terms:hover{
+            text-decoration: underline;
+        }
+        .Terms:focus{
+            outline: none;
+        }
+        .Settings{
+            height: 41px;
+            float:right;
+            border-style: none;
+            font-size: 14px;
+            color: #5f6368;
+            padding-right:27px;
+            width:81px;
+            background: #f2f2f2;
+        }
+        .Settings:hover{
+            text-decoration: underline;
+        }
+        .Settings:focus{
+            outline: none;
+        }
+    </style>
+</head>
+
+<body>
+    <nav>
+        <button class="Gmail">Gmail</button>
+        <button class="Images">Images</button>
+        <button class="options"></button>
+        <button class="Sign-in">Sign in</button>
+    </nav>
+    <img src="https://cdn.worldvectorlogo.com/logos/google-2015.svg" alt="Google logo" >
+    <form class="search">
+        <input type="text" class="search-bar">
+        <input type="button" class="keyboard-button">
+        <input type="button" class="voice-button">
+    </form>
+    <div class=buttons>
+        <button class="google-search-button">Google Search</button>
+        <button class="lucky-button">I'm Feeling Lucky</button>
+    </div>
+    <p>Copy of original Google search homepage.</p>
+    <footer>
+        <button class="Advertising">Advertising</button>
+        <button class="Business">Business</button>
+        <button class="About">About</button>
+        <button class="HowSW">How Search works</button>
+        <button class="Settings">Settings</button>
+        <button class="Terms">Terms</button>
+        <button class="Privacy">Privacy</button>
+    </footer>
+</body>
